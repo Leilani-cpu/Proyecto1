@@ -1,11 +1,32 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
+    background-image: url('imagenes/fondo1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(241, 232, 232, 0.5); /* Capa negra semi-transparente */
+    z-index: -1;
+}
+
 
 .container {
     margin-top: 50px;
+}
+
+h1 {
+    color: #090909;
+}
+
+p {
+    font-size: 18px;
+    color: #0a0b0a;
 }
 
 .boton {
@@ -13,11 +34,23 @@ body {
     margin: 10px;
     padding: 10px 20px;
     text-decoration: none;
-    background-color: #007BFF;
-    color: white;
+    background-color: #790a0a;
+    color: rgb(255, 255, 255);
     border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
 .boton:hover {
-    background-color: #0056b3;
+    background-color: #f41e1e;
 }
+
+.contenido {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgb(46, 4, 88);
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(112, 35, 42, 0.936);
+}
+
